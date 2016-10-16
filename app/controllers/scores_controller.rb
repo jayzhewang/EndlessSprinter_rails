@@ -9,7 +9,8 @@ class ScoresController < ApplicationController
     if @score.save
       render json: @user, status: ok
     else
-      render json: @user.errors.full_messages, status: :unprocessable_entity
+      render json: @score
+      # render json: @user.errors.full_messages, status: :unprocessable_entity
     end
   end
 
