@@ -5,13 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Score.new('player', 0);
-Score.new('player', 0);
-Score.new('player', 0);
-Score.new('player', 0);
-Score.new('player', 0);
-Score.new('player', 0);
-Score.new('player', 0);
-Score.new('player', 0);
-Score.new('player', 0);
-Score.new('player', 0);
+Score.create(name: 'player', score: 0)
+Score.create(name: 'player', score: 0)
+Score.create(name: 'player', score: 0)
+Score.create(name: 'player', score: 0)
+Score.create(name: 'player', score: 0)
+Score.create(name: 'player', score: 0)
+Score.create(name: 'player', score: 0)
+Score.create(name: 'player', score: 0)
+Score.create(name: 'player', score: 0)
+Score.create(name: 'player', score: 0)
