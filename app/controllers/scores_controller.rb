@@ -5,9 +5,10 @@ class ScoresController < ApplicationController
   end
 
   def create
+    debugger;
     @score = Score.new(score_params)
     if @score.save
-      render json: @score, status: ok
+      render json: @score
     else
       render json: @score.errors.full_messages, status: :unprocessable_entity
     end
@@ -15,6 +16,6 @@ class ScoresController < ApplicationController
 
   private
   def score_params
-    params.require(:score).permit(:name, :score)
+    params.permit(:name, :score)
   end
 end
