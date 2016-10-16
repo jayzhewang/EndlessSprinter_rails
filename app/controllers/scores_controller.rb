@@ -5,7 +5,6 @@ class ScoresController < ApplicationController
   end
 
   def create
-    debugger;
     @score = Score.new(score_params)
     if @score.save
       render json: @score
